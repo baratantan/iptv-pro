@@ -1,0 +1,14 @@
+
+{
+  "expo": {
+    "name": "IPTV Pro",
+    "slug": "iptv-pro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "package": "com.tantan.iptvpro",
+      "versionCode": 1
+    }
+  }
+}
