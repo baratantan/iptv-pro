@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { registerRootComponent } from 'expo';
 import {
   SafeAreaView,
   View,
@@ -8,10 +9,11 @@ import {
   StatusBar
 } from 'react-native';
 
-export default function App() {
+function App() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" />
+
       <View style={styles.header}>
         <Text style={styles.logo}>IPTV PRO</Text>
         <Text style={styles.subtitle}>
@@ -25,7 +27,7 @@ export default function App() {
           تطبيق IPTV Pro قيد التطوير
         </Text>
         <Text style={styles.status}>
-          تم تجهيز الواجهة الأولية بنجاح
+          الواجهة الأولية جاهزة
         </Text>
       </View>
 
@@ -91,3 +93,5 @@ const styles = StyleSheet.create({
     marginTop: 35
   }
 });
+
+registerRootComponent(App);
